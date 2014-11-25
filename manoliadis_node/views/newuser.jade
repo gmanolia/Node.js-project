@@ -1,0 +1,10 @@
+extends layout
+//"placeholder" is the text printed, "name" is the name of the value 
+block content
+	h1= title
+	form#formAddUser(name="adduser",method="post",action="/adduser")
+		input#inputFirstName(type="text", placeholder="FirstName", name="FirstName")
+		input#inputLastName(type="text", placeholder="LastName", name="LastName")
+		input#inputEmail(type="text", placeholder="Email", name="Email")
+		input#inputAfm(type="text", placeholder="AFM", name="Afm")
+		button#btnSubmit(type="submit") submit  

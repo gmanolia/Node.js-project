@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1.
+		Producer List
+	table
+		thead
+			tr: th Producers
+		tbody
+			each post, i in userlist
+				tr
+					td= post.FirstName
+					td= post.LastName
+					td= post.email
+					td= post.afm
+					
